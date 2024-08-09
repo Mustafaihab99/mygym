@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/mygym/static/css/main.e51f4de4.css",
+    "main.js": "/mygym/static/js/main.b2f77774.js",
+    "static/media/meal2.jpg": "/mygym/static/media/meal2.0966bbc89e41cb9be772.jpg",
+    "static/media/fit.jpg": "/mygym/static/media/fit.69f68da8aad5253f7cd1.jpg",
+    "static/media/meal1.jpg": "/mygym/static/media/meal1.ae19a177e7e8c2e21960.jpg",
+    "static/media/bench2.jpg": "/mygym/static/media/bench2.0d8c3f85bf60434f4cf3.jpg",
+    "static/media/run3.jpg": "/mygym/static/media/run3.6ccd11780ce1dd676576.jpg",
+    "static/media/run1.jpg": "/mygym/static/media/run1.fbff7fa513be2da06ba8.jpg",
+    "static/media/fat.jpg": "/mygym/static/media/fat.8863979e56cdea4cbb86.jpg",
+    "static/media/calor.jpg": "/mygym/static/media/calor.b6d71bc33bcef452f0c2.jpg",
+    "static/media/meal3.jpg": "/mygym/static/media/meal3.39c5e7eb4210afb2383b.jpg",
+    "static/media/meal4.jpg": "/mygym/static/media/meal4.bccac1870758420e6f67.jpg",
+    "static/media/run.jpg": "/mygym/static/media/run.237f661dfe87ba2a231f.jpg",
+    "static/media/run5.jpg": "/mygym/static/media/run5.237f661dfe87ba2a231f.jpg",
+    "static/media/bench.jpg": "/mygym/static/media/bench.3aefb9eddcfdabb6d468.jpg",
+    "static/media/gym.jpg": "/mygym/static/media/gym.5bcfafdf7e15ffa72418.jpg",
+    "static/media/run6.jpg": "/mygym/static/media/run6.638ed3e1838e492ba601.jpg",
+    "static/media/left.png": "/mygym/static/media/left.01f20b7ed184de4da3d4.png",
+    "static/media/bench3.jpg": "/mygym/static/media/bench3.ed1d2f6f7fa38fb2394e.jpg",
+    "static/media/run2.jpg": "/mygym/static/media/run2.0b1316ddcd208c3b0f26.jpg",
+    "static/media/run4.jpg": "/mygym/static/media/run4.6f2cad4319cb94b59b8d.jpg",
+    "static/media/logo.png": "/mygym/static/media/logo.7d5733addbcda5f31429.png",
+    "static/media/gym.png": "/mygym/static/media/gym.70608adb8d5481d183d4.png",
+    "static/media/pro.png": "/mygym/static/media/pro.8bcb4bc03a97cf11a298.png",
+    "static/media/pro2.webp": "/mygym/static/media/pro2.0c0ac2f6e743ef789c18.webp",
+    "static/media/google.png": "/mygym/static/media/google.95dc49b78d107476c83f.png",
+    "static/media/facebook.png": "/mygym/static/media/facebook.96b40f50e7e9d848f0a2.png",
+    "static/media/star.png": "/mygym/static/media/star.38b437d30911c46ce48a.png",
+    "index.html": "/mygym/index.html",
+    "static/media/checkbox.svg": "/mygym/static/media/checkbox.5a7b85615a311f4110c3c4e9feca5b4a.svg",
+    "static/media/premium.svg": "/mygym/static/media/premium.7b46addf1276e5a15c262a80d78250d1.svg",
+    "static/media/arrow.svg": "/mygym/static/media/arrow.2c0586828152883c65990a90b05b6161.svg",
+    "main.e51f4de4.css.map": "/mygym/static/css/main.e51f4de4.css.map",
+    "main.b2f77774.js.map": "/mygym/static/js/main.b2f77774.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e51f4de4.css",
+    "static/js/main.b2f77774.js"
+  ]
+}
