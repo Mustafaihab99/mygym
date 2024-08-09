@@ -1,7 +1,7 @@
 {
   "name": "gym",
   "version": "0.1.0",
-  "homepage": "https://Mustafaihab99.github.io/mygym",
+  "homepage": "https://Mustafaihab99.github.io/mygym/#",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -44,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^6.1.1"
   }
 }
