@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Routes, Route } from 'react-router-dom'; // Import Routes and Route
+import { HashRouter } from 'react-router-dom';
 import Run from '../component/exercise/run';
 import Login from "./form/LoginForm";
 import Fit from './exercise/fitnes/fit';
@@ -18,6 +19,7 @@ import Plans from './plans/Plans';
 function AppRoutes() {
   return (
     <Routes>
+      <HashRouter>
       <Route path="/run" element={<Run />} />
       <Route path="/LoginForm" element={<Login />} />
       <Route path="/fit" element={<Fit />} />
@@ -32,6 +34,7 @@ function AppRoutes() {
       <Route path="/" element={<LoginForm />} />
       <Route path="/my-account" element={<MyAccount />} />
       <Route path="/plans" element={<Plans />} />
+      </HashRouter>
     </Routes>
   );
 }
