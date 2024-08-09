@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.body {
+  background-color: black;
+  height: 100%;
+  padding: 20px 0px;
+}
+.Account {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border: 2px solid rgb(100, 217, 178);
+  border-radius: 15px;
+  width: 80%;
+  margin: 30px auto;
+  gap: 5%;
+}
+.ImgPart {
+  width: 20%;
+  padding: 20px;
+}
+.ImgPart img {
+  width: 100%;
+  height: 100%;
+  border: 5px rgb(100, 217, 178) solid;
+  border-radius: 50%;
+}
+.ImgPart input {
+  width: 75%;
+  color: transparent;
+  margin-top: 30px;
+}
+.ImgPart input:focus {
+  border: 0;
+}
+::-webkit-file-upload-button {
+  color: black;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.219), transparent)
+    rgb(100, 217, 178);
+  font-size: 1.1em;
+  font-weight: bold;
+  border: 1px rgb(63, 63, 63) solid;
+  padding: 8px;
+  width: 100%;
+}
+.InfoPart button {
+  color: black;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.219), transparent)
+    rgb(100, 217, 178);
+  font-size: 1.1em;
+  font-weight: 600;
+  border: 1px rgb(63, 63, 63) solid;
+  border-radius: 6px;
+  padding: 5px;
+  width: 30%;
+  height: 60px;
+  margin-left: 30%;
+  margin-bottom: 12px;
+}
+
+.InfoPart {
+  width: 75%;
+  text-align: left;
+  margin-top: 30px;
+}
+.InfoPart h4 {
+  color: rgb(100, 217, 178);
+  font-size: 1.6em;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 2rem;
+}
+.InfoPart p {
+  width: 99%;
+  line-height: 2;
+  color: white;
+  font-size: 1.3em;
+  border-bottom: 1px solid rgb(100, 217, 178);
+}
+
+@media (max-width: 996px) {
+  .ImgPart {
+    width: 30%;
+  }
+  .InfoPart {
+    width: 63%;
+  }
+}
+@media (max-width: 665px) {
+  .ImgPart {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .InfoPart {
+    width: 90%;
+  }
+  .Account {
+    flex-direction: column;
+    align-items: center;
+  }
+}

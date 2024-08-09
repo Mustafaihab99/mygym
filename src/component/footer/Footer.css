@@ -1,0 +1,87 @@
+
+.footer{
+    background-image: linear-gradient(182deg, #020932bd 64%, rgb(60 87 88));
+    padding: 30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    margin-top: 80px;
+    background-size: cover;
+    }
+
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    display: block;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    .copy{
+        margin-left: 30px;
+    }
+    .footer .row #face:hover{
+        color:#1e3288;
+    }
+    .footer .row #insta:hover{
+        color: rgb(198, 106, 137);
+    }
+    .footer .row #you:hover{
+        color: red;
+    }
+    .footer .row #twit:hover{
+        color: rgb(255, 255, 255);
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    #icons{
+        margin-left: 120px;
+    }
+    #icons a:hover{
+        color: white;
+    }
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    }
+    @media (max-width:1100px) {
+        
+    #icons{
+    margin-left: 20px;
+    }
+    #icons{
+    margin-left: 20px;
+    }
+    }
+    @media (max-width:400px) {
+    #icons{
+    margin-left: -10px;
+    }
+    }

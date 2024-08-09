@@ -1,0 +1,18 @@
+.exp h6{
+    font-size: 28px;
+}
+@media (max-width: 950px) {
+    .exp h6{
+        font-size: 17px;
+    }
+}
+@media (max-width: 700px) {
+    .exp h6{
+        font-size: 12px;
+    }
+}
+@media (max-width: 400px) {
+    .exp h6{
+        font-size: 9px;
+    }
+}

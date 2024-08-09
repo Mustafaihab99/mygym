@@ -1,0 +1,111 @@
+.mytit{
+    margin-top: 100px;
+}
+.mytit h2{  
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin-top: 30px;
+}
+.mypage{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.mypage img{
+    width: 50%;
+    border: 6px solid rgb(100, 217, 178);
+    border-radius: 20px;
+    margin-right: 15px;
+    height: 450px;
+}
+.mypage h4{
+    color: #ffffffd9;
+    margin-left: 20px;
+    margin-top: 50px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    margin-right: 5px;
+    font-weight: 600;
+    max-width: 600px;
+}
+.mypage button{
+    margin-left: 30%;
+    margin-top: 7%;
+    background-color: rgb(100, 217, 178);
+    width: 110px;
+    height: 33px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: .5s linear;
+    position: relative;
+    z-index: 2;
+}
+.mypage button::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    background-color: black;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+
+}
+.mypage button:hover::before{
+    animation: full .3s forwards;
+    z-index: -1;
+}
+
+.mypage button:hover a{
+    background-color: black;
+    color: rgb(100, 217, 178);
+    transition-delay: .2s;
+}
+.mypage button a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+@keyframes full {
+    0%{
+        width: 25%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@media (max-width:740px) {
+    .mypage h4{
+        font-size: 15px;
+    }
+    .mypage img{
+        width: 40%;
+        height: 400px;
+    }
+    .mypage{
+        align-items: center;
+    }
+}
+@media (max-width:740px) {
+    .mypage h4{
+        font-size: 13px;
+    }
+    .mypage img{
+        width: 35%;
+        height: 300px;
+        border: 1px solid rgb(100, 217, 178); 
+    }
+}
+@media (max-width:400px) {
+    .mypage h4{
+        font-size: 8px;
+    }
+    .mypage img{
+     display: none;
+    }
+}

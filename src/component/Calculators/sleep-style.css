@@ -1,0 +1,168 @@
+:root {
+    --prog: 70;
+}
+
+@property --progress {
+    syntax: "<number>";
+    initial-value: 0;
+    inherits: false;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.sleep-calc {
+    margin: auto;
+    margin-top: 100px;
+    width: 500px;
+    height: 250px;
+    background-color: #242628;
+    display: flex;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    z-index: 20;
+}
+
+.circular {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: conic-gradient(rgb(100, 217, 178) calc(var(--progress) * 3.6deg), black 0deg);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.animation {
+    animation: pro 2s forwards;
+    -webkit-animation: pro 2s forwards;
+}
+
+@keyframes pro {
+    0% {
+        --progress: 0;
+    }
+    100% {
+        --progress: var(--prog);
+    }
+}
+
+.sleep-result {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.circular::before {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background-color: #242628;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.div-cir {
+    width: 40%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.sleep-inputs {
+    /* padding: 10px; */
+    width: 60%;
+}
+
+.sleep-inputs p {
+    color: white;
+    font-size: 20px;
+    margin: 10px 0px;
+    margin-top: 20px;
+}
+
+.sleep-inputs label {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.sleep-inputs input {
+    width: 30%;
+    background-color: #242628;
+    color: white;
+}
+
+.sleep-inputs button {
+    /* margin: auto; */
+    margin-top: 20px;
+    background-color: rgb(100, 217, 178);
+    border: 0;
+    color: white;
+    font-weight: 600;
+    width: 100px;
+    height: 30px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@media (max-width:620px) {
+    .sleep-calc {
+        width: 275px;
+        flex-direction: column;
+        align-items: center;
+        height: 350px;
+        position: relative;
+        margin-left: 2px;
+    }
+    .div-cir {
+        position: absolute;
+        top: -50%;
+        width: 100%;
+    }
+    .sleep-inputs {
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        padding-left: 10px;
+    }
+    .sleep-inputs label {
+        font-size: 10px;
+    }
+    .sleep-inputs button {
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 35px;
+    }
+}

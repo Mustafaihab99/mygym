@@ -1,0 +1,176 @@
+*{
+    scroll-behavior: smooth;
+    font-family: -apple-system , sans-serif;
+    box-sizing: border-box;
+}
+html{
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 15px;
+    height: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: white;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(100, 217, 178);
+  }
+  
+body{
+    background-color: black;
+    scrollbar-width: thin;  
+    scrollbar-color: rgb(100, 217, 178);
+}
+#header{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 1rem 3%;
+    backdrop-filter: blur(10px);
+    transition: all .4s ease;
+    
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+    align-items: baseline;
+} 
+li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all .4s ease;
+    padding: 10px;
+    border-bottom: 3px solid transparent;
+    color: white; 
+}
+.main li a:hover{
+color: rgb(100, 217, 178);
+border-bottom: 3px solid rgb(100, 217, 178);
+}
+.logo{
+    font-size: 3rem;
+    display: inline;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+span{
+    color: rgb(100, 217, 178);
+}
+.menu{
+    display: flex;
+    gap: 1.7em;
+  }
+  .menu li:hover{
+    border-radius: 5px;
+  }
+  .menu li{
+    padding: 5px 14px;
+  }
+  .brand{
+    position: relative;
+  }
+  .drop{
+    background-color: transparent;
+    padding: 1em 0;
+    position: absolute; /*with respect to parent*/
+    display:none;
+    border-radius: 8px;
+    top: 35px;
+    transition: all .3s;
+  }
+  .drop li+li{
+    margin-top: 10px;
+  }
+  .drop li{
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+    transition: all .3s;
+  }
+  .drop li a{
+    color: rgb(100, 217, 178);
+    transition: all .3s;
+  }
+  .drop li :hover{
+    border-radius: 3px;
+  }
+  .brand:hover .drop{
+    display: block;
+  }
+/* responsive */
+@media (max-width:1200px) {
+  html{
+    font-size: 55%;
+  }
+}
+@media (max-width:991px) {
+    li a{
+        display: block;
+        padding: 10px;
+        font-size: 15px;
+    }
+    .ul.active{
+        right: 0;
+    }
+    #header{
+        padding: 2rem 3%;
+    }
+    .drop li{
+        margin-bottom: -10px;
+    }
+}
+
+@media (max-width:663px) {
+    #header{
+        display: flex;
+        flex-direction: column;
+        backdrop-filter: blur(0);
+    }
+    ul{
+        gap: 10;
+    }
+    ul a{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    
+   .drop li{
+    margin-bottom: -30px;
+   }
+   .drop li a{
+    font-size: 15px;
+   }
+   .drop li a:hover{
+    border-bottom: 0;
+   }
+}
+@media (max-width:400px) {
+   ul{
+    gap: 0;
+   }
+   ul a{
+    font-size: 10px;
+   }
+   .drop li a{
+    font-size: 10px;
+   }
+}

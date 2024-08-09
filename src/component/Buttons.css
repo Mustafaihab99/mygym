@@ -1,0 +1,35 @@
+#boddy{
+    background-color: black;
+}
+.buttons {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  /* button {
+   
+    padding: 10px 20px;
+    font-size: 16px;
+  } */
+  .buttons >h1{
+    color: white;
+  }
+  
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  .cta-button {
+    background-color: rgb(100,217,178);
+    color: white;
+    margin: 10px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  .cta-button:hover {
+    background-color: rgb(0, 201, 134)
+  }
+  

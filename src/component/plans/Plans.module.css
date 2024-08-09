@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+:root {
+  --green: rgb(100, 217, 178);
+  --bg-color: #000;
+  --text-color: #ffffffeb;
+  --font-family: "Nunito", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* 
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 1.5rem;
+} */
+
+.parentt ul {
+  list-style-type: none;
+  color: #e7dfdfdb;
+}
+
+.parentt .cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.parentt .card {
+  background-color: #494646c4;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  width: 450px;
+}
+
+.parentt .card .pricing {
+  text-align: center;
+}
+
+.parentt .card .center {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.parentt .card h2 {
+  font-size: 1.8rem;
+}
+
+.parentt .card a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--text-color);
+  padding: 1rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: var(--bg-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.parentt .card a:hover {
+  background-color: #ffffffcb;
+  transform: scale(1.05);
+}
+
+.parentt .card a img {
+  margin-left: 0.5rem;
+}
+
+.parentt .circle {
+  border-radius: 50%;
+  background-color: #ffffffd3;
+  text-align: center;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  padding: 0.8rem;
+  position: relative;
+}
+
+.parentt .card img[alt="heart"], .card img[alt="premium"], .card img[alt="star"] {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.parentt .shape {
+  display: flex;
+  justify-content: center;
+}
+
+.parentt .basic {
+  background-color: rgba(100, 217, 178, 0.767);
+}
+
+.parentt .titles {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.parentt .titles h1 {
+  color: var(--green);
+}
+
+.parentt .card ul {
+  color: #e7dfdfdb;
+}
+
+.parentt .card li {
+  margin-bottom: 0.5rem;
+}
+
+.parentt .card img[alt="checkbox"] {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}

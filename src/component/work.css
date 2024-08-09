@@ -1,0 +1,62 @@
+.exer{
+    background-color: black;
+    margin-top: 80px;
+}
+.exer h2{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+.box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+.box .card{
+    background-color: black;
+    border: 1px solid transparent;
+    box-shadow: 0 0 5px rgb(100, 217, 178);
+    transition: all .5s ease;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: auto;
+}
+.box .card img{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.box .card .h5{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    color: white;
+}
+.box .card:hover{
+    border: 1px solid rgb(100, 217, 178);
+    transform: translateY(-5px) scale(1.04);
+    cursor: pointer;
+}
+.box .card p{
+    color: rgb(165 223 233);;
+    font-size: 16px;
+}
+.box .card button{
+    margin-top: 10%;
+    margin-left: 30%;
+    background-color: rgb(100, 217, 178);
+    color: black;
+    border: 2px solid rgb(100, 217, 178);
+    transition: .3s;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+}
+.box .card button:hover{
+    background-color: black;
+    color: rgb(124, 198, 174);
+    border: 2px solid rgb(124, 198, 174);
+}

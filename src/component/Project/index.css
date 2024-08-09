@@ -1,0 +1,33 @@
+
+#div {
+  font-family: 'Raleway', sans-serif;
+  padding-top: 20px;
+  background-color:#0c0c0c ;
+  color: #ffffff;
+}
+.contact_form .form-control {
+  padding: 1.375rem .75rem;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: #0c0c0c;
+  border-radius: 0 !important;
+  border:1px solid #ffffff
+}
+.contact_form input.form-control{
+  margin-bottom: 2em ;
+  height:(2.5em+ .75rem +2px) ;
+}
+.btn{
+  color: #ffffff;
+  border: 2px solid ;
+  border-color: #ffffff;
+  text-decoration: none;
+}
+.btn:hover {
+  color: white;
+}
+@media (max-width: 992px) {
+  input{
+    margin-top: 10px;
+  }
+}
