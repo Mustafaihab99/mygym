@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import Head from "./component/head";
 import Home from "./component/home";
 import Work from "./component/workout";
@@ -42,8 +43,10 @@ function MainLayout() {
 }
 
 function App() {
+  const RouterComponent = process.env.REACT_APP_ENV === 'production' ? HashRouter : Router;
+
   return (
-    <Router>
+    <RouterComponent basename={process.env.REACT_APP_ENV === 'production' ? '/mygym' : '/'}>
       <Routes>
         <Route path="/run" element={<Run />} />
         <Route path="/LoginForm" element={<Login />} />
@@ -60,7 +63,7 @@ function App() {
         <Route path="/plans" element={<Plans />} />
         <Route path="/*" element={<MainLayout />} />
       </Routes>
-    </Router>
+    </RouterComponent>
   );
 }
 
