@@ -31,7 +31,7 @@
     margin-top: 20px;
     font-size: 15px;
 }
-.bton{
+.bton {
     display: inline-block;
     padding: 6px 30px;
     background-color: rgb(100, 217, 178);
@@ -43,10 +43,18 @@
     transition: .5s ease;
     border: 2px solid transparent;
 }
+.bton a{
+    color: black;
+    text-decoration: none;
+}
 .bton:hover{
     background-color: black;
     color: rgb(100, 217, 178);
     border: 2px solid rgb(100, 217, 178);
+}
+.bton:hover a{
+    color: rgb(100, 217, 178);
+
 }
 /* ?responsive */
 @media (max-width:800px) {
