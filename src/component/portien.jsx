@@ -3,11 +3,6 @@ import pro from './pro.png';
 import { Link } from "react-router-dom";
 import './prot.css';
 class Protin extends Component{
-    handleOpenInNewTab = (event) => {
-        event.preventDefault();
-        const url = window.location.origin + '/cart'; // Construct the full URL
-        window.open(url, '_blank');
-    };
     render(){
         return(
             <React.Fragment>
@@ -18,7 +13,7 @@ class Protin extends Component{
                             Many trainers prefer protein powders for men who are bodybuilders,
                             athletes, and active gym-goers as it helps in building muscle strength and improves performance.
                             we provide it by cheapy price and good quality of it come and buy it and enjoy with our offer</h6>
-                        <Link to="/cart" onClick={this.handleOpenInNewTab}><button className="bton" style={{marginTop : '20%'}}>Buy now</button></Link>
+                        <Link to="/cart"><button className="bton" style={{marginTop : '20%'}}>Buy now</button></Link>
                     </div>
                     <div className="image">
                         <img src={pro} alt=""></img>
