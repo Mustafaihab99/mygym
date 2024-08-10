@@ -8,26 +8,6 @@ import meal4 from './meal4.jpg';
 
 import './work.css';
 class Meal extends Component {
-    handleOpenInNewTab = (event) => {
-        event.preventDefault();
-        const url = window.location.origin + '/meal4'; // Construct the full URL
-        window.open(url, '_blank');
-      };
-      handleOpenInNewTab2 = (event) => {
-        event.preventDefault();
-        const url = window.location.origin + '/meal3'; // Construct the full URL
-        window.open(url, '_blank');
-      };
-      handleOpenInNewTab3 = (event) => {
-        event.preventDefault();
-        const url = window.location.origin + '/meal2'; // Construct the full URL
-        window.open(url, '_blank');
-      };
-      handleOpenInNewTab4 = (event) => {
-        event.preventDefault();
-        const url = window.location.origin + '/meal1'; // Construct the full URL
-        window.open(url, '_blank');
-      };
     render() {
         return (
             <div id="meal">
@@ -46,7 +26,7 @@ class Meal extends Component {
                                    protein and you will get weight 
                                 </Card.Text>
                                 
-                                <Link to="/meal4" onClick={this.handleOpenInNewTab}><Button>Join now</Button></Link>
+                                <Link to="/meal4"><Button>Join now</Button></Link>
                             </Card.Body>
                         </Card>
 
@@ -59,7 +39,7 @@ class Meal extends Component {
                                 this high-calorie diet can help you manage your weight if you are an athlete or lead an active lifestyle
                                 with protein, fiber, healthy fats and complex carbohydrates while still including fun foods.
                                 </Card.Text> 
-                                <Link to="/meal3" onClick={this.handleOpenInNewTab2}><Button>Join now</Button></Link>
+                                <Link to="/meal3"><Button>Join now</Button></Link>
                             </Card.Body>
                         </Card>
 
@@ -72,7 +52,7 @@ class Meal extends Component {
                                     as a base to determine daily values of various nutrients. if you want to lose weight rather than
                                     maintain a healthy weight, that number will change. it is helps many people lose weight. 
                                 </Card.Text> 
-                                <Link to="/meal2" onClick={this.handleOpenInNewTab3}><Button>Join now</Button></Link>
+                                <Link to="/meal2"}><Button>Join now</Button></Link>
                             
                             </Card.Body>
                         </Card>
@@ -86,7 +66,7 @@ class Meal extends Component {
                                 Like any health diet it should include mostly whole, unprocessed foods. Reducing excess calories and
                                 using some of the simple tips in this article can help you succeed in your weight loss journey.
                                 </Card.Text> 
-                                <Link to="/meal1" onClick={this.handleOpenInNewTab4}><Button>Join now</Button></Link>
+                                <Link to="/meal1"><Button>Join now</Button></Link>
                             </Card.Body>
                         </Card>
                     </div>
