@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Routes, Route , HashRouter} from 'react-router-dom'; 
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Run from '../component/exercise/run';
 import Login from "./form/LoginForm";
 import Fit from './exercise/fitnes/fit';
@@ -12,12 +11,11 @@ import Meals2000 from './Meals/Meals2000';
 import Meals1500 from './Meals/Meals1500';
 import Calculator from './Calculators/calorie-calaulator';
 import Cart from './cart';
-import LoginForm from './form/LoginForm';
 import MyAccount from './account/MyAccount';
 import Plans from './plans/Plans';
+
 function AppRoutes() {
   return (
-      <HashRouter>
     <Routes>
       <Route path="/run" element={<Run />} />
       <Route path="/LoginForm" element={<Login />} />
@@ -30,11 +28,11 @@ function AppRoutes() {
       <Route path="/meal1" element={<Meals1500 />} />
       <Route path="/calc" element={<Calculator />} />
       <Route path="/cart" element={<Cart />} />
-      <Route path="/" element={<LoginForm />} />
       <Route path="/my-account" element={<MyAccount />} />
       <Route path="/plans" element={<Plans />} />
+      <Route path="/" element={<Login />} />
+      <Route path="*" element={<Navigate to="/" replace />} /> {/* Redirect unknown paths to home */}
     </Routes>
-      </HashRouter>
   );
 }
 
