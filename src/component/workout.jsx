@@ -7,26 +7,6 @@ import push from './fit.jpg';
 import run from './run.jpg';
 import './work.css';
 class Work extends Component {
-    handleOpenInNewTab = (event) => {
-        event.preventDefault();
-        const url = window.location.origin + '/run'; // Construct the full URL
-        window.open(url, '_blank');
-      };
-      handleOpenInNewTab2 = (event) => {
-        event.preventDefault();
-        const url = window.location.origin + '/fit'; // Construct the full URL
-        window.open(url, '_blank');
-      };
-      handleOpenInNewTab3 = (event) => {
-        event.preventDefault();
-        const url = window.location.origin + '/equa'; // Construct the full URL
-        window.open(url, '_blank');
-      };
-      handleOpenInNewTab4 = (event) => {
-        event.preventDefault();
-        const url = window.location.origin + '/loss'; // Construct the full URL
-        window.open(url, '_blank');
-      };
     render() {
         return (
             <div id="ex">
@@ -44,7 +24,7 @@ class Work extends Component {
                                     equipment guide that will free you from the unknown so you can develop an informed workout regimen and expand your fitness horizons.
                                     so we will present some workouts
                                 </Card.Text>
-                                <Link to="/equa" onClick={this.handleOpenInNewTab3}><Button>Join now</Button></Link>
+                                <Link to="/equa"><Button>Join now</Button></Link>
                             </Card.Body>
                         </Card>
 
@@ -57,7 +37,7 @@ class Work extends Component {
                                     occupations, and daily activities. Physical fitness is generally
                                     achieved through proper nutrition, moderate-vigorous physical exercise, and sufficient rest along with a formal recovery plan
                                 </Card.Text>
-                                <Link to="/fit" onClick={this.handleOpenInNewTab2}><Button>Join now</Button></Link>
+                                <Link to="/fit"><Button>Join now</Button></Link>
                             </Card.Body>
                         </Card>
 
@@ -70,7 +50,7 @@ class Work extends Component {
                                     Nutrition supplements that increase fat metabolism, impair fat absorption,
                                     increase weight loss, and increase fat oxidation during exercise are known as fat burners.
                                 </Card.Text>
-                                <Link to="/loss" onClick={this.handleOpenInNewTab4}><Button>Join now</Button></Link>
+                                <Link to="/loss"><Button>Join now</Button></Link>
                             </Card.Body>
                         </Card>
 
@@ -83,7 +63,7 @@ class Work extends Component {
                                     There are many positives, and some negatives, it is easy,
                                     enjoyable and makes humans more social, you can do it at anytime, and it relieves stress rather than give stress.
                                 </Card.Text>
-                                <Link to="/run" onClick={this.handleOpenInNewTab}><Button>Join now</Button></Link>
+                                <Link to="/run"><Button>Join now</Button></Link>
                             </Card.Body>
                         </Card>
                     </div>
