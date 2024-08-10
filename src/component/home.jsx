@@ -22,7 +22,7 @@ class Home extends Component {
               Regular physical workouts can have benefits that compound over time. When you exercise consistently,
               you may experience improvements in various aspects of your health and well-being
             </p>
-            <Link to="/LoginForm" onClick={this.handleOpenInNewTab}><button className="bton">Join Us</button></Link>
+            <Link to="/LoginForm" onClick={this.handleOpenInNewTab}><button className="bton"><a href=".">Join Us</a></button></Link>
           </div>
           <div className="image">
             <img src={lift} alt="" />
