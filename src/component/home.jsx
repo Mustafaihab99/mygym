@@ -4,12 +4,6 @@ import lift from '../left.png';
 import './home.css';
 
 class Home extends Component {
-  handleOpenInNewTab = (event) => {
-    event.preventDefault();
-    const url = window.location.origin + '/LoginForm'; // Construct the full URL
-    window.open(url, '_blank');
-  };
-
   render() {
     return (
       <React.Fragment>
@@ -22,7 +16,7 @@ class Home extends Component {
               Regular physical workouts can have benefits that compound over time. When you exercise consistently,
               you may experience improvements in various aspects of your health and well-being
             </p>
-            <Link to="/LoginForm" onClick={this.handleOpenInNewTab}><button className="bton"><a href=".">Join Us</a></button></Link>
+            <Link to="/LoginForm"><button className="bton"><a href=".">Join Us</a></button></Link>
           </div>
           <div className="image">
             <img src={lift} alt="" />
