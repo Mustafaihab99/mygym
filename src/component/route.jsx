@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Run from '../component/exercise/run';
-import Login from "./form/LoginForm";
+import LoginForm from "./form/LoginForm";
 import Fit from './exercise/fitnes/fit';
 import Equa from './exercise/equapment';
 import Loss from './exercise/fatloss';
@@ -18,7 +18,7 @@ function AppRoutes() {
   return (
     <Routes>
       <Route path="/run" element={<Run />} />
-      <Route path="/LoginForm" element={<Login />} />
+      <Route path="/LoginForm" element={<LoginForm />} />
       <Route path="/fit" element={<Fit />} />
       <Route path="/equa" element={<Equa />} />
       <Route path="/loss" element={<Loss />} />
@@ -30,7 +30,6 @@ function AppRoutes() {
       <Route path="/cart" element={<Cart />} />
       <Route path="/my-account" element={<MyAccount />} />
       <Route path="/plans" element={<Plans />} />
-      <Route path="/" element={<Login />} />
       <Route path="*" element={<Navigate to="/" replace />} /> {/* Redirect unknown paths to home */}
     </Routes>
   );
